@@ -3,9 +3,9 @@ name: GIPHY generator
 on: 
   issues:
     types: [opened, edited]
-   pull_request:
+  pull_request:
     types: [opened, edited]
-   issue_comment: 
+  issue_comment: 
     types: [created, edited] 
     
 jobs:
@@ -18,7 +18,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
-         with:
+        with:
           rating: 'g'
           lang: 'en'
       

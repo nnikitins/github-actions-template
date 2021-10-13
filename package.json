@@ -12,6 +12,12 @@
     "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch",
     "test": "npx standard && npx jest"
   },
+  "standard": {
+    "env": [
+      "jest",
+      "browser"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sinet2000/github-actions-template.git"
